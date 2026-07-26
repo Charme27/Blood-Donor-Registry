@@ -1,3 +1,8 @@
+## Project Demo 🎥
+
+[Watch Demo Video](https://drive.google.com/file/d/1nijVJiiKXolecvx5ARStGNGLinp-MIrX/view?usp=share_link)
+
+
 # 🩸 Blood Donor Registry
 
 A web-based Blood Donor Registry System developed using **HTML, CSS, JavaScript, Flask, and SQLite**. This application helps manage blood donor information by allowing users to view donor records, while administrators can securely add, update, and delete donor details.
