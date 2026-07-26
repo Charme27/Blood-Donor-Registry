@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Registry</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🩸 Blood Donor Registry</h1>
+    <div class="stats">
+
+    <div class="card">
+        <h2 id="totalDonors">0</h2>
+        <p>Total Donors</p>
+    </div>
+
+    <div class="card">
+        <h2 id="eligibleDonors">0</h2>
+        <p>Eligible</p>
+    </div>
+
+    <div class="card">
+        <h2 id="notEligibleDonors">0</h2>
+        <p>Not Eligible</p>
+    </div>
+
+</div>
+
+<button onclick="logout()" class="logout-btn">Logout</button>
+
+<button onclick="showForm()" class="add-btn">+ Add Donor</button>
+
+<!-- Donor Form -->
+<div id="donorForm" style="display:none; margin:20px 0;">
+
+    <input type="text" id="donorId" placeholder="Donor ID" readonly>
+
+    <input type="text" id="donorName" placeholder="Donor Name">
+
+    <input type="text" id="bloodGroupInput" placeholder="Blood Group">
+
+    <input type="text" id="areaInput" placeholder="Area">
+
+    <button id="saveBtn" onclick="saveDonor()">Save Donor</button>
+
+</div>
+
+<!-- Search Controls -->
+<div class="controls">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search by Donor Name">
+
+    <select id="bloodGroup" onchange="filterBloodGroup()">
+        <option value="">All Blood Groups</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+    </select>
+
+    <button onclick="searchDonors()">Search</button>
+
+</div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Donor ID</th>
+                <th>Name</th>
+                <th>Blood Group</th>
+                <th>Area</th>
+                <th>Eligible</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="donorTable">
+            <tr>
+                <td colspan="6">Loading donors...</td>
+            </tr>
+</tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
