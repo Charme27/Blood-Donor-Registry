@@ -139,18 +139,6 @@ staff123
 
 ---
 
-## 📷 Project Screenshots
-
-Add screenshots of:
-
-- Login Page
-- Dashboard
-- Add Donor
-- Edit Donor
-- Delete Confirmation
-- Search & Filter
-
----
 
 ## 📈 Future Enhancements
 
